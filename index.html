@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Número Mágico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+<div class="card">
+
+    <h1>✨NÚMERO MÁGICO✨</h1>
+    <p class="subtitulo">Adivina el número del 1 al 100</p>
+
+    <!-- Estado -->
+    <div class="status-box">
+        <div class="intentos">
+            <span>INTENTOS:</span>
+            <strong id="contador">10</strong>
+        </div>
+
+        <div class="barra-container">
+            <div class="barra" id="barraProgreso"></div>
+        </div>
+    </div>
+
+    <!-- MMensaje -->
+    <div class="mensaje-box">
+        <div class="nube">☁️</div>
+        <p id="mensaje">¡Comienza a jugar!</p>
+    </div>
+
+    <!-- Ingreso y boton -->
+    <div class="input-area">
+        <input type="number" id="numeroInput" placeholder="Escribe tu número">
+        <button id="btnAdivinar">✈</button>
+    </div>
+
+    <!-- Historial -->
+    <div class="historial">
+        <h3>HISTORIAL</h3>
+        <div id="listaIntentos" class="burbujas"></div>
+    </div>
+
+    <button id="btnReiniciar" class="btn-restart oculto">
+        JUGAR DE NUEVO ↻
+    </button>
+
+</div>
+
+<script src="./JS/script.js"></script>
+</body>
+</html>
